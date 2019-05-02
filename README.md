@@ -22,7 +22,7 @@ run `make`
 
 `gen_targets.py` is a crude python script to derive target filenames from dependency filenames according to a single given `make` pattern rule, and matching dependency files found on disk.
 
-It is used to generate build targets, so we can easily tell `make` that we want to build all rendered config files that have a one-to-one relationship via the given pattern rule with a Jinja2 template in our templates directory. GNU Make doesn't have built-in functionality to do this easily (for example: it can handle replacing path suffixes, but lacks support for easily handling path prefixes).
+It is used to generate the file names of build targets, so we can easily tell `make` that we want to build all rendered config files that have a one-to-one relationship via the given pattern rule with a Jinja2 template in our templates directory. GNU Make doesn't have built-in functionality to do this easily (for example: it can handle replacing path suffixes, but lacks support for easily handling path prefixes).
 
 No claim is made that `gen_targets.py` understands GNU Make pattern rules in general, but it appears to work for this demo!
 
